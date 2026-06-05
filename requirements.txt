@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+python-jose[cryptography]
+passlib
+pandas
+qdrant-client
+sentence-transformers
+anthropic
+python-dotenv
+streamlit
+requests
+pydantic
