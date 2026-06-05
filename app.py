@@ -275,7 +275,8 @@ The user role is: {userRole}
 Rules:
 - Answer using ONLY the context provided below.
 - If the answer is not in the context, say: "I don't have enough information in the provided documents."
-- Do not guess numbers.
+- You MAY compute aggregates (averages, totals, counts) from numerical data present in the context.
+- Do not guess or invent numbers not present in the context.
 - Do not mention or print "Sources used".
 - Do not repeat the context headers like [source=...].
 
@@ -345,7 +346,7 @@ def chat(req: ChatRequest, user=Depends(getCurrentUser)):
     role = user["role"]
     allowedDepts = allowedDepartmentsForRole(role)
 
-    hits = retrieveChunks(message, allowedDepts=allowedDepts, topK=8)
+    hits = retrieveChunks(message, allowedDepts=allowedDepts, topK=12)
 
     if not hits:
         return {
