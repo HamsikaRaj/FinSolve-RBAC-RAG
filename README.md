@@ -1,6 +1,6 @@
 # FinSolve RBAC RAG
 
-An internal chatbot for FinSolve Technologies that lets employees ask questions about company documents — but only see answers from data their role is allowed to access.
+An internal chatbot for FinSolve Technologies that lets employees ask questions about company documents but only see answers from data their role is allowed to access.
 
 Built this as a project to explore how RAG and RBAC can work together. The idea is simple: a finance employee should be able to ask about quarterly revenue, but shouldn't be able to see HR records or the engineering architecture. Access control is enforced at the vector search level, not just in the prompt.
 
