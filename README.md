@@ -130,10 +130,3 @@ data/
   hr/                  — employee records + auth credentials
 ```
 
----
-
-## Notes
-
-- The `.env` file is gitignored — don't commit your API key
-- `storage/` (Qdrant's local data directory) is also gitignored — run the ingestion script after cloning
-- RBAC is enforced twice: once as a Qdrant filter, once on the results before they reach the LLM
