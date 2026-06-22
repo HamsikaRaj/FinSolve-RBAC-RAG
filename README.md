@@ -11,7 +11,7 @@ Built this as a project to explore how RAG and RBAC can work together. The idea 
 - Employees log in with their employee ID and password
 - A JWT is issued with their role and department baked in
 - When they ask a question, the backend only retrieves document chunks from departments they're allowed to see
-- Claude Sonnet answers using only those chunks — if the answer isn't in the allowed documents, it says so
+- Claude Sonnet answers using only those chunks if the answer isn't in the allowed documents, it says so
 
 ---
 
